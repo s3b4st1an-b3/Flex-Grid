@@ -1,0 +1,420 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background: #f0eded;
+    font-family: Arial, sans-serif;
+    margin: 8px;
+}
+
+header{
+
+    margin: 10px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo{
+  border-radius: 10px;
+    width: 20%;
+    background-color: #20415e;
+    color: #ffffff;
+    padding: 6vh;
+    text-align: center;
+}
+
+
+.portal{
+  border-radius: 10px;
+    margin-right: 20px;
+    width: 80%;
+    background-color: #616161;
+    color: #ffffff;
+    padding: 6vh;
+    text-align: center;
+}
+
+nav{
+  text-align: center;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  border-right: 2px black solid;
+  border-left: 2px black solid;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+.menu a:hover {
+  background-color: #5e5e5e70;
+  border-radius: 5px;
+}
+
+/* Submenú oculto por defecto */
+.submenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  color: #fff;
+  background-color: #cccccc78;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: none;
+  min-width: 150px;
+  z-index: 10;
+}
+
+.submenu li a {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+/* Mostrar submenú al hacer hover */
+.dropdown:hover .submenu {
+  display: block;
+}
+
+/* .menu {
+    /* background-color: #f0f0f0; 
+    text-align: center;
+    padding: 1vh;
+}
+
+.menu a {
+    margin: 6px;
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    border-right: 2px black solid;
+    border-left: 2px black solid;
+    padding: 5px;
+  }
+.menu a:hover {
+    color: #2367db;
+    text-decoration: none;
+  } */
+
+  .contenedor1 {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+    margin: 10px;
+  }
+
+  .descubre {
+  border-radius: 10px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    width: 43vh;
+    /* background-color: #616161; */
+    background-color: #7c7c7c;
+
+    padding: 1rem;
+    color: #ffffff;
+}
+  .descubre p{
+    font-size: 25px;
+    margin-top: 50px;
+    padding: 10px;
+  text-align: center;
+}
+
+.descubre button {
+  border-radius: 10px;
+  text-align: center;
+      justify-content: center;
+      align-items: center;
+    background-color: #aba7a7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+.descubre button:hover {
+    background-color: #373434;
+    cursor: pointer;
+  }
+  .cursos {
+  border-radius: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    /* background-color: #b0afaf; */
+    background-color: #7c7c7c;
+
+    text-align: center;
+  }
+  .cursos p{
+
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 5px;
+    text-align: center;
+  }
+
+  .cursos img {
+  border-radius: 10px;
+    width: 300px;
+    height: 250px;
+    margin: 25px;
+  }
+  .cursos img:hover {
+  border-radius: 10px;
+    width: 320px;
+    height: 270px;
+    margin: 25px;
+    transition: all;
+  }
+
+.profesores {
+  border-radius: 10px;
+  height: auto;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+  }
+  .imgprofesores{
+  border-radius: 10px;
+    height: auto;
+    width: 100%;
+    margin-right:  40px; 
+    border: #000 solid 3px;
+    margin: 10px;
+    /* background-color: #898585; */
+    background-color: #aaaaaa;
+
+    color: #fff;
+  }
+
+  .imgprofesores img{
+  border-radius: 10px;
+    background: cover;
+    height: 100%;
+    width: 100%;
+    border: #000 solid 3px;
+    color: #fff;
+  }
+
+  .perfil{
+  border-radius: 10px;
+    width: 100%;
+    height: auto;
+    border: #000 solid 2px;
+    /* background-color: #898585; */
+    background-color: #aaaaaa;
+
+  }
+
+  .perfil p{
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    line-height: 5px;
+  }
+
+
+  .logros{
+  border-radius: 10px;
+    height:auto;
+    width: 100%;
+    border: #000 solid 2px;
+    /* background-color: #898585; */
+    background-color: #aaaaaa;
+
+    color: #000000;
+
+  }
+
+  .logros p{
+    font-size: 20px;
+    margin-top: 30px;
+    padding: 10px;
+    text-align: center;
+    line-height: 5px;
+  }
+
+
+.titulo{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.videos {
+  border-radius: 10px;
+    margin: 10px ;
+    margin-top: 20px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .video1{
+    height: 100%;
+    width: 600px;
+    color: #fff;
+  }
+  .video2{
+    height: 100%;
+    width: 600px;
+    color: #fff;
+  }
+
+  .video3{
+    height:100%;
+    width: 600px;
+    color: #fff;
+
+
+
+  }
+  
+  
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 8px;
+}
+
+
+  /* footer */
+
+  .footer {
+  border-radius: 10px;
+
+    background: #616161;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    /* text-align: left; */
+    padding: 30px;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .footer ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer h3 {
+    margin-bottom: 10px;
+  }
+  .social-icons i {
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 0.2s ease;
+    color: white;
+  }
+
+  .social-icons i:hover {
+    transform: scale(1.2);
+    color: #1e3459;
+  }
+
+  .f1{
+    padding-left: 10px;
+    border-left: #fff solid 1px;
+
+  }
+
+
+  /* ------------------- RESPONSIVE TABLET ------------------- */
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+  }
+
+  .logo, .portal {
+    width: 100%;
+    padding: 4vh;
+  }
+
+  .contenedor1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .descubre, .cursos {
+    width: 100%;
+  }
+
+  .profesores {
+    align-items: center;
+    flex-direction: column;
+  }
+
+ .cursos img{
+  width: 80%;
+ }
+
+  .videos {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .video1, .video2, .video3 {
+    width: 100%;
+    height: auto;
+  }
+
+  .video1 video, .video2 video, .video3 video {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu{
+    flex-wrap: wrap;
+  }
+  .perfil p{
+    flex-wrap: wrap;
+  }
+}
